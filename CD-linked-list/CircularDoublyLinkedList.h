@@ -10,16 +10,16 @@
 
 using std::function;
 
-//implementación de la clase DoubleCircularList.
+//implementación de la clase CircularDoublyLinkedList.
 template<typename T>
-class DoubleCircularList {
+class CircularDoublyLinkedList {
 
 private:
     //enlazando clase Node.
     class Node {
 
     public:
-        //atributos para clase DoubleCircularList.
+        //atributos para clase CircularDoublyLinkedList.
         T item;        //elemento a almacenar.
         Node* next;    //guarda ubi. del nodo siguiente.
         Node* prev;    //guarda ubi. del nodo anterior.
@@ -31,12 +31,12 @@ private:
     };
 
 public:
-    //constructor para clase DoubleCircularList.
-    DoubleCircularList()
+    //constructor para clase CircularDoublyLinkedList.
+    CircularDoublyLinkedList()
         : head(nullptr), end(nullptr), n(0){
     }
     //destructor para clase.
-    ~DoubleCircularList() {
+    ~CircularDoublyLinkedList() {
         //verificando si la lista tiene elementos.
         if (head != nullptr && end != nullptr) {
 
@@ -71,7 +71,7 @@ public:
             delete current;
         }
     }
-    //métodos para la clase DoubleCircularList.
+    //métodos para la clase CircularDoublyLinkedList.
     void push_back(T item) {  //para agregar elementos a últ. posición.
         //creando nodo.
         Node* newNode = new Node(item);
