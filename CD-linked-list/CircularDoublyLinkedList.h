@@ -2,8 +2,8 @@
 // Created by Gonzalo Quedena on 23/06/2023.
 //
 
-#ifndef __CIRCULAR_DOUBLE_LIST_H__
-#define __CIRCULAR_DOUBLE_LIST_H__
+#ifndef __CIRCULAR_DOUBLY_LINKED_LIST_H__
+#define __CIRCULAR_DOUBLY_LINKED_LIST_H__
 
 #include <cstdio>
 #include <functional>
@@ -209,4 +209,4 @@ private:
 };
 
 
-#endif //__CIRCULAR_DOUBLE_LIST_H__
+#endif //__CIRCULAR_DOUBLY_LINKED_LIST_H__
