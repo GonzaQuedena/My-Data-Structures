@@ -141,7 +141,7 @@ public:
         //verificando que lista NO esté vacía.
         if (head != nullptr && end != nullptr) {
             //creando referencia current.
-            Node* current;
+            Node* current = nullptr;
             //evaluando tipo de recorrido a desear (n:normal, r:reverso).
             if (it == 'n') {
                 //obteniendo nodo inicial.
